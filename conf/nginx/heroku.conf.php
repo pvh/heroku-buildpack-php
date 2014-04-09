@@ -1,4 +1,6 @@
 http {
+    include /etc/nginx/mime.types;
+
     server {
         listen <?=getenv('PORT')?:'8080'?>;
         
